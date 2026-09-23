@@ -1,9 +1,16 @@
 module.exports = function activate(ctx) {
-  ctx.log("main entry activated", ctx.id);
-  ctx.registerHandler("ping", function () {
-    return "pong";
+  ctx.log("osu!mania exporter main activated", ctx.id);
+
+  ctx.registerHandler("info", function () {
+    return {
+      format: "osu",
+      mode: "mania",
+      formats: ["osu"],
+      version: "0.1.0",
+    };
   });
+
   ctx.onDispose(function () {
-    ctx.log("main entry disposed");
+    ctx.log("osu!mania exporter main disposed");
   });
 };

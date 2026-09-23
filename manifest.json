@@ -1,13 +1,13 @@
 {
-  "id": "dev.bdg.example-basic",
+  "id": "dev.bdg.osu-export",
   "version": "0.1.0",
   "name": {
-    "zh": "示例插件（基础）",
-    "en": "Example Plugin (basic)"
+    "zh": "osu!mania 导出",
+    "en": "osu!mania Export"
   },
   "description": {
-    "zh": "验证插件宿主加载/启停的最小示例，同时提供 renderer 与 main 两个入口。",
-    "en": "Minimal sample verifying the plugin host load/unload with both a renderer and a main entry."
+    "zh": "把踩点导出为 osu!mania 谱面（.osu）。面板里填写元数据、选择 7K/8K/16K 等键数并把每条轨道映射到列，同一时刻的多轨踩点自动成为多押。",
+    "en": "Export markers as an osu!mania beatmap (.osu). Configure metadata, pick a key count (7K/8K/16K ...), map each track to a column; simultaneous markers on different tracks become chords."
   },
   "main": "main.js",
   "renderer": "renderer.js"
