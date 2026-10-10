@@ -1,6 +1,7 @@
 {
   "id": "dev.bdg.osu-export",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "apiVersion": 2,
   "name": {
     "zh": "osu!mania 导出",
     "en": "osu!mania Export"

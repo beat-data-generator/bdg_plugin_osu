@@ -555,12 +555,8 @@ window.__bdgPluginRegister(function activate(api) {
     },
   });
 
-  api.ui.registerAction({
-    label: { zh: "打开 osu!mania 导出面板", en: "Open osu!mania export panel" },
-    run: function () {
-      panel.open();
-    },
-  });
+  // v2: the panel above already contributes its own menu entry, so there is no
+  // separate registerAction to open it.
 
   api.ui.registerShortcut({
     id: "toggle-osu-export",
